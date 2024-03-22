@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | NoteIt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body" data-page="home">
+    <header class="header-container">
+      <div class="heading">
+        <img src="./assets/notes-sm.png" alt="" srcset="" />
+        <h1>NoteIt</h1>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li class="list">
+            <a href="/" class="link cursor">Home</a>
+          </li>
+          <li class="list">
+            <a href="/archive.html" class="link cursor">Archive</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content-area-container">
+      <div class="text-area-wrapper">
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Title"
+        ></textarea>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Make a note"
+        ></textarea>
+      </div>
+      <button><span>Add</span></button>
+    </div>
+    <!-- <div class="container d-flex direction-column align-center relative">
+      <textarea class="text-area title" placeholder="Title"></textarea>
+      <textarea class="text-area note" placeholder="Make a note..."></textarea>
+      <button
+        class="button add-btn d-flex align-center justify-center absolute"
+      >
+        <span class="material-icons-outlined"> add </span>
+      </button>
+    </div> -->
+  </body>
 </html>
