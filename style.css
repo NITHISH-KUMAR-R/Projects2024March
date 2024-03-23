@@ -1,3 +1,10 @@
+@import url("./utility.css");
+@import url("./appstyle.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons+Outlined");
+
 * {
   margin: 0;
   border: 0;
@@ -29,13 +36,32 @@ nav ul li {
 
 .content-area-container {
   margin-top: 20px;
+  background-color: rgb(110, 220, 171);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-area-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: blue;
+  background-color: black;
 }
-
-textarea {
-  border-color: brown;
+.text-area1 {
+  border-color: rgb(86, 19, 19);
+  width: 35em;
+  height: 20px;
+  resize: none;
+  border: 2px solid green;
+  border-bottom: none;
+  outline: none; /* Remove outline when focused */
+}
+.text-area2 {
+  width: 35em;
+  height: 50px;
+  resize: none;
+  border: 2px solid green;
+  border-top: none;
+  outline: none; /* Remove outline when focused */
 }

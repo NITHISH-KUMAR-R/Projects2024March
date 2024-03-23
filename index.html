@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | NoteIt</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="appstyle.css" />
   </head>
   <body class="body" data-page="home">
     <header class="header-container">
@@ -24,33 +25,28 @@
         </ul>
       </nav>
     </header>
+
     <div class="content-area-container">
       <div class="text-area-wrapper">
+        <textarea class="text-area1 title" id="" placeholder="Title"></textarea>
         <textarea
-          name=""
+          class="text-area2 note"
           id=""
-          cols="30"
-          rows="10"
-          placeholder="Title"
-        ></textarea>
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
           placeholder="Make a note"
         ></textarea>
       </div>
-      <button><span>Add</span></button>
-    </div>
-    <!-- <div class="container d-flex direction-column align-center relative">
-      <textarea class="text-area title" placeholder="Title"></textarea>
-      <textarea class="text-area note" placeholder="Make a note..."></textarea>
       <button
         class="button add-btn d-flex align-center justify-center absolute"
       >
         <span class="material-icons-outlined"> add </span>
       </button>
-    </div> -->
+    </div>
+    <div class="notes-display">
+      <div class="pin-title d-none">Pinned</div>
+      <div class="pinned-notes-container d-flex wrap gap-md"></div>
+      <div class="other-title d-none">Others</div>
+      <div class="notes-container d-flex wrap gap-md"></div>
+    </div>
+    <script type="module" src="../Projects2024March/main.js"></script>
   </body>
 </html>
