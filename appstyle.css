@@ -1,9 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 .min-boxcontainer {
-  margin-top: 5em;
-  background-color: rgb(178, 171, 171);
-  width: 20em;
-  height: 5em;
+  margin: 1em auto;
+  background-color: rgb(80, 209, 121);
+  flex-basis: calc(33.33% - 10px); /* 33.33% width with gap adjustment */
+  max-width: calc(23.33% - 10px); /* Adjust max-width accordingly */
+  margin-bottom: 10px; /* Add some margin between notes */
+  height: 100px;
+  padding: 10px;
+  position: relative;
 }
 .titleNotes {
   display: flex;
@@ -15,7 +19,28 @@
   margin-top: 10px;
   display: flex;
   justify-content: space-evenly;
+  display: none; /* Initially hide buttons */
 }
 button {
   color: blue;
+  font-size: 20px;
+  background-color: transparent; /* Set background color to transparent */
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove box shadow */
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgba(7, 7, 49, 0.1); /* Add a slight hover effect */
+}
+
+.note {
+  /* Ensure note wraps */
+  word-wrap: break-word;
+}
+
+.shadow {
+  box-shadow: 3px 3px 3px 3px rgba(46, 6, 6, 0.1);
+}
+.min-boxcontainer:hover .noteSection {
+  display: flex; /* Show buttons when container is hovered over */
 }
